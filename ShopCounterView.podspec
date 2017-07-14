@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
     s.source_files = 'ShopCounterView/Classes/*.{h,m}'
     s.frameworks   = 'Foundation','UIKit'
     s.requires_arc = true
-    s.dependency  'Masonry', '~> 1.0.2'
+    s.dependency  'Masonry','~> 1.0.2'
 end
 #
