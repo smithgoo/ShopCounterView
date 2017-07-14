@@ -32,9 +32,6 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ShopCounterView/Classes/*.{h,m}’
   
-  # s.resource_bundles = {
-  #   'ShopCounterView' => ['ShopCounterView/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation'
