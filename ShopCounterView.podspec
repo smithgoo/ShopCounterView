@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name         = 'ShopCounterView'
     s.version      = '0.1.0'
-    s.summary      = ''
+    s.summary      = '啦啦啦啦'
     s.homepage     = 'https://github.com/smithgoo'
     s.license      = 'MIT'
     s.authors      = {'王朋' => '294336370@qq.com'}
