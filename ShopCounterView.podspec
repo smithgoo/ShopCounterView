@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.authors      = {'王朋' => '294336370@qq.com'}
     s.platform     = :ios, '8.0'
     s.source       = {:git => 'https://github.com/smithgoo/ShopCounterView.git', :tag => s.version}
-    s.source_files = 'ShopCounterView/Classes/*.{h,m}'
+    s.source_files = 'ShopCounterView/Classes/**/**/*.{h,m}'
     s.frameworks   = 'Foundation','UIKit'
     s.requires_arc = true
 end
