@@ -32,5 +32,5 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ShopCounterView/Classes/*.{h,m}’
 
-  s.frameworks   = 'Foundation','UIKit'
+  #s.frameworks   = 'Foundation','UIKit'
 end
