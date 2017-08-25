@@ -30,11 +30,9 @@
     _subtractionBtn.backgroundColor =[UIColor whiteColor];
     [_subtractionBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [self addSubview:_subtractionBtn];
-    [_subtractionBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.mas_centerY);
-        make.left.equalTo(self.mas_left);
-        make.height.width.equalTo(self.mas_height);
-    }];
+    _subtractionBtn.frame =CGRectMake(0, 0, self.bounds.size.height, self.bounds.size.height);
+    
+    
     
     _plusBtn  =[UIButton new];
     _plusBtn.tag=10002;
@@ -44,11 +42,8 @@
     [_plusBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     _plusBtn.backgroundColor =[UIColor whiteColor];
     [self addSubview:_plusBtn];
-    [_plusBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.mas_centerY);
-        make.right.equalTo(self.mas_right);
-        make.height.width.equalTo(self.mas_height);
-    }];
+    _plusBtn.frame =CGRectMake(self.bounds.size.width-self.bounds.size.height, 0, self.bounds.size.height, self.bounds.size.height);
+
     
     _showLab =[UILabel new];
     _showLab.layer.borderColor=km_rgb_hex(0xdfdfdf).CGColor;
@@ -59,14 +54,8 @@
     _showLab.text =@"0";
     _showLab.textColor =[UIColor redColor];
     [self addSubview:_showLab];
-    [_showLab mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.mas_centerX);
-        make.centerY.equalTo(self.mas_centerY);
-        make.left.equalTo(_subtractionBtn.mas_right);
-        make.right.equalTo(_plusBtn.mas_left);
-        make.top.equalTo(_subtractionBtn.mas_top);
-        make.bottom.equalTo(_subtractionBtn.mas_bottom);
-    }];
+    _plusBtn.frame =CGRectMake(self.bounds.size.height, 0,self.bounds.size.width-2* self.bounds.size.height, self.bounds.size.height);
+
     
     [_subtractionBtn addTarget:self action:@selector(methodAction:) forControlEvents:UIControlEventTouchUpInside];
     [_plusBtn addTarget:self action:@selector(methodAction:) forControlEvents:UIControlEventTouchUpInside];
