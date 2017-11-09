@@ -54,7 +54,7 @@
     _showLab.text =@"0";
     _showLab.textColor =[UIColor redColor];
     [self addSubview:_showLab];
-    _plusBtn.frame =CGRectMake(self.bounds.size.height, 0,self.bounds.size.width-2* self.bounds.size.height, self.bounds.size.height);
+    _showLab.frame =CGRectMake(self.bounds.size.height, 0,self.bounds.size.width-2* self.bounds.size.height, self.bounds.size.height);
 
     
     [_subtractionBtn addTarget:self action:@selector(methodAction:) forControlEvents:UIControlEventTouchUpInside];
